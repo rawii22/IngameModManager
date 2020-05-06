@@ -1,2 +1,0 @@
-c_spawn("honey")
-c_spawn("meat")

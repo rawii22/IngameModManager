@@ -1,11 +1,11 @@
 local io = GLOBAL.require("io")
 
 local modkey = "\'"
-local command = ""
 GLOBAL.TheInput:AddKeyUpHandler(
 	modkey:lower():byte(), 
 	function()
 		if not GLOBAL.IsPaused() and IsDefaultScreen() then
+			local command = ""
 			for line in io.lines("../mods/IngameModManager/command.txt") do
 				command = command.." "..line
 			end
